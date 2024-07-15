@@ -1,0 +1,5 @@
+mvn clean install
+docker login -u {user_name} -p {key}
+docker build -t atm .
+docker tag atm rajeshkaipa/atm:latest
+docker push rajeshkaipa/atm:latest
